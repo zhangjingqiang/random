@@ -38,7 +38,7 @@ const Random: React.FC = () => {
           </Col>
         </Row>
         <Row justify="center" gutter={[16, 16]}>
-          {options.map((member, index) => (
+          {options.map((option, index) => (
             <Col key={index}>
               <div
                 style={{
@@ -57,7 +57,7 @@ const Random: React.FC = () => {
                   boxShadow: "2px 2px 10px #ccc",
                 }}
               >
-                {member}
+                {option}
               </div>
             </Col>
           ))}
