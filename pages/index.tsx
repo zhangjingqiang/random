@@ -21,7 +21,7 @@ const Random: React.FC = () => {
           width: '100%',
           display: 'flex',
           justifyContent: 'center',
-          marginTop: '350px',
+          marginTop: '300px',
         }}
       >
         <Button type="primary" size="large" onClick={handleClick}>
@@ -39,7 +39,7 @@ const Random: React.FC = () => {
         }}
       >
         <Avatar
-          size={64}
+          size={100}
           style={{ backgroundColor: 'green', fontWeight: 'bold' }}
         >
           {value}
@@ -52,7 +52,7 @@ const Random: React.FC = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          marginBottom: '350px',
+          marginBottom: '300px',
         }}
       >
         {options.map((option, index) => (
