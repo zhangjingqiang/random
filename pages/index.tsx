@@ -10,7 +10,7 @@ const Random: React.FC = () => {
   const handleClick = () => {
     const randomValue = options[Math.floor(Math.random() * options.length)];
     setValue(randomValue);
-    setShowValue(!showValue);
+    setShowValue(true);
   };
 
   return (
@@ -35,15 +35,16 @@ const Random: React.FC = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          opacity: showValue ? 1 : 0,
         }}
       >
-        <Avatar
-          size={100}
-          style={{ backgroundColor: 'green', fontWeight: 'bold' }}
-        >
-          {value}
-        </Avatar>
+        {showValue && (
+          <Avatar
+            size={100}
+            style={{ backgroundColor: 'green', fontWeight: 'bold' }}
+          >
+            {value}
+          </Avatar>
+        )}
       </div>
       <div
         style={{
